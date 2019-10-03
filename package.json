@@ -1,0 +1,21 @@
+{
+  "name": "Astralys",
+  "version": "1.0.0",
+  "description": "docker project astralys",
+  "author": "Vincent Darcemont <darcemontv@eisti.eu",
+  "license": "MIT",
+  "main": "app.js",
+  "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express",
+    "sqlite3",
+    "mustache"
+  ],
+  "dependencies": {
+    "express": "^4.16.4",
+    "file-system": "^2.2.2",
+    "mustache": "^3.1.0",
+    "sqlite3": "^4.1.0"
+  }
+}

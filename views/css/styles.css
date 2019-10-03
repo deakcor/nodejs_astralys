@@ -1,0 +1,198 @@
+body{
+    color : white;
+    background-color:rgba(0,0,0,0);
+}
+.button{
+    background-color : rgba(10,10,10,0.5);
+
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 32px;
+    transition: all 0.4s;
+    margin : 10px;
+
+}
+
+.button:hover{
+    background-color : rgba(10,10,10,0.75);
+    box-shadow: 0 4px 8px 0 rgba(10, 200, 255, 0.8), 0 6px 20px 0 rgba(0, 200, 255, 0.79);
+    transform: translateY(-5px);
+    cursor: pointer !important;
+}
+.button:focus {
+    outline:0;
+}
+
+a:hover{
+    text-decoration: none; !important;
+    color :white !important;
+}
+.bg{
+    margin:0;
+    padding:0;
+    height: 100vh; width: 100vw;
+}
+.bg:before{
+    content: "";
+    position: absolute;
+    height: 100vh; width: 100vw;
+    background-image: url(../images/space.jpg);
+    z-index:-1;
+    background-position:center;
+    background-size: cover;
+    /*animation: 360s rotate infinite linear;*/
+    
+}
+
+@keyframes rotate {
+  from { transform : rotate(0deg);}
+  to   { transform : rotate(360deg);)
+
+}
+}
+
+
+.noflexzone{
+    height : 100%;
+    display : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    padding: 25px;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.column{
+    flex-direction : column;
+}
+.fullsize{
+    width: 100%;
+}
+
+.input-block-level {
+    width : 100%;
+    min-height: 36px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 25px;
+    padding: 4px 6px;
+    background-color : rgba(150,150,150,0.3);
+    color: white;
+
+}
+.input-block-level:focus {
+    outline:0;
+}
+
+.input-block-level::placeholder {
+    color: rgb(150, 150, 150);
+}
+
+p{
+    text-align: center;
+
+}
+
+h1{
+    color: rgb(255,255,255);
+    text-align: center;
+    padding : 25px;
+}
+h3{
+    color: rgb(220,220,220);
+    text-align: center;
+}
+
+h4{
+    margin : 10px;
+}
+
+.modal{
+    text-align : center;
+    color : black;
+}
+
+.newform{
+    width: 75%;
+    padding : 10px;
+    margin-left: 12.5%;
+}
+
+.logo{
+    margin-right : auto;
+    margin-left : auto;
+    width : 80%;
+    margin-bottom: 200px;
+}
+
+.logo-small{
+    width : 60px;
+}
+
+.center{
+    text-align: center;
+
+}
+
+
+
+.jumbotron{
+    background-color: rgba(10,10,10,0);
+}
+
+.color-noir{
+    background: linear-gradient(rgba(10,10,10,1),rgba(10,10,10,0.8) ,rgba(10,10,10,0.6),rgba(10,10,10,0));
+}
+
+.table{
+    background-color : rgba(10,10,10,0.75);
+
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 32px;
+    transition: all 0.4s;
+    margin : 10px;
+
+
+}
+
+.modal-content{
+    background-color : rgba(10,10,10,0.8);
+    box-shadow: 0 4px 8px 0 rgba(10, 200, 255, 0.8), 0 6px 20px 0 rgba(0, 200, 255, 0.79);
+
+    border: none;
+    color: white;
+    border-radius: 25px;
+}
+.table:hover{
+    background-color : rgba(10,10,10,0.8);
+    box-shadow: 0 4px 8px 0 rgba(10, 200, 255, 0.8), 0 6px 20px 0 rgba(0, 200, 255, 0.79);
+    transform: translateY(-5px);
+    cursor: pointer !important;
+}
+
+thead{
+    font-size: 20px;
+}
+
+th{
+    border:none !important;
+}
+
+td{
+    border-bottom : 1px solid;
+    border-top : none !important;
+    border-color: rgba(0,200,255,0.8) !important;
+}
+
+tbody{
+    border:none !important;
+}
