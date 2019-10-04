@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:8.16.1
 WORKDIR /views
 COPY package.json /views
 RUN npm install

@@ -31,6 +31,7 @@ db.each("SELECT * FROM scores", function(err, row) {
           `)
     }
 });
+  console.log("db loaded")
   }else{
     console.log("No db file")
   }
