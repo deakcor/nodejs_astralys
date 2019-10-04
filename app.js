@@ -36,7 +36,6 @@ db.each("SELECT * FROM scores", function(err, row) {
   }
 
 
-console.log(__dirname);
 
 
 
@@ -79,5 +78,5 @@ app.use(express.static(game_path));
 app.use('/', router2);
 
 app.listen(port, function () {
-  console.log('Astralys on the move!')
+  console.log('Astralys on the move! Go on your browser and type : locahost:8080')
 })
