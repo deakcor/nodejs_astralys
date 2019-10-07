@@ -19,7 +19,7 @@ if (fs.existsSync(game_path + 'index.html')){
 }
 if (fs.existsSync(db_path)) {
     var db = new sq.Database(db_path);
-db.each("SELECT * FROM scores", function(err, row) {
+db.each("SELECT * FROM scores ORDER BY score DESC", function(err, row) {
     if (err) {
         console.log(err);
     } else {
