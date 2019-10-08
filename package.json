@@ -9,13 +9,13 @@
     "nodejs",
     "bootstrap",
     "express",
-    "sqlite3",
+    "better-sqlite3",
     "mustache"
   ],
   "dependencies": {
+    "better-sqlite3": "^5.4.3",
     "express": "^4.16.4",
     "file-system": "^2.2.2",
-    "mustache": "^3.1.0",
-    "sqlite3": "^4.1.0"
+    "mustache": "^3.1.0"
   }
 }
