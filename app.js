@@ -113,7 +113,7 @@ router.get('/game', function(req,res){
 
 //Run html5 game
 router2.get('/game-html5', function(req,res){
-  if (fs.existsSync(game_path + 'test.html')){
+  if (fs.existsSync(game_path + 'index.html')){
     res.sendFile(game_path + 'index.html');  
   }else{
     res.status(404).send(`Page introuvable ! 
