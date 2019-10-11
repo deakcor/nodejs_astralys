@@ -1,5 +1,5 @@
 const express = require('express');
-const db_path=__dirname+'/bdd/base.db'
+const db_path=__dirname+'/bdd/'
 const sq = require('better-sqlite3');
 const mustache =require('mustache');
 const fs=require('file-system')
@@ -25,18 +25,29 @@ if (fs.existsSync(game_path + 'index.html')){
 }else{
   console.log("no game file")
 }
-if (fs.existsSync(db_path)) {
-    db= new sq(db_path, { verbose: console.log });
-    maj_tab()
-  console.log("db loaded");
 
+if (fs.existsSync(db_path)) {
+  if (fs.existsSync(db_path+"base.db")){
+    db= new sq(db_path+"base.db", { verbose: console.log });
+    maj_tab()
+    console.log("db loaded");
+  }else{
+    fs.mkdirSync(db_path)
+    init_db()
+  }
   
   }else{
     console.log("No db file");
+    init_db()
   }
 
-
-
+function init_db(){
+  fs.writeFileSync(db_path+"base.db","")
+  
+  db= new sq(db_path+"base.db", { verbose: console.log });
+  db.prepare("CREATE TABLE IF NOT EXISTS scores ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `name` TEXT, `score` NUMERIC)").run()
+  console.log("db file created");
+}
 
 function maj_tab(){
 ld="<tbody>";
